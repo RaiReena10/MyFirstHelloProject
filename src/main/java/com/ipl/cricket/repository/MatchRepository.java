@@ -18,5 +18,13 @@ public interface MatchRepository extends JpaRepository<Match, Long>{
 		return findByTeam1OrTeam2OrderByDateDesc(teamName,teamName,Pageable.ofSize(count));
 		
 	}
+	
+	default public List<Match> getLatestMatchList1(String teamName, int count)
+	{
+		return findByTeam1OrTeam2OrderByDateDesc(teamName,teamName,Pageable.ofSize(count));
+		
+	}
+	
+	
 
 }
