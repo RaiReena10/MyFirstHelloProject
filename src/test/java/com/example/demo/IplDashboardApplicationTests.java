@@ -8,7 +8,10 @@ class IplDashboardApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 		System.out.println("Inside test :");
+
+		
 	}
 
 }
