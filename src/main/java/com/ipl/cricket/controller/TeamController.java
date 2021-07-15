@@ -19,7 +19,7 @@ public class TeamController {
 
 	@Autowired
 	private MatchRepository matchRepo;
-
+	//To get the team
 	@GetMapping(value = "/team/{teamName}")
 	public Team getTeam(@PathVariable String teamName) {
 		
