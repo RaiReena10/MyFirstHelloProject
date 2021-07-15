@@ -25,6 +25,8 @@ public class TeamController {
 		
 		Team team = teamRepo.findByTeamName(teamName);
 		team.setAllMatches(matchRepo.getLatestMatchList(teamName, 4));
+		
+		System.out.println("Changes done in Master :");
 
 		return team;
 
