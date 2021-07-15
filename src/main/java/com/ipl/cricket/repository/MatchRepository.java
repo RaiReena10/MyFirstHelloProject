@@ -12,7 +12,7 @@ import com.ipl.cricket.entity.Match;
 public interface MatchRepository extends JpaRepository<Match, Long>{
 	
 	public List<Match> findByTeam1OrTeam2OrderByDateDesc(String team1,String team2,Pageable pagable);
-	
+	//It returns all the latest match
 	default public List<Match> getLatestMatchList(String teamName, int count)
 	{
 		return findByTeam1OrTeam2OrderByDateDesc(teamName,teamName,Pageable.ofSize(count));
