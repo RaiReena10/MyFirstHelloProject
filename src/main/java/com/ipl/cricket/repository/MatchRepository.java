@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.ipl.cricket.entity.Match;
-
+//Class is used to fetch data from Remote Repository
 @Repository
 public interface MatchRepository extends JpaRepository<Match, Long>{
 	
