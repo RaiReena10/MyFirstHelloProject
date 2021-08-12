@@ -8,6 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Transient;
 
+// I am in a bug fix branch
 @Entity
 public class Team {
 	@Id
